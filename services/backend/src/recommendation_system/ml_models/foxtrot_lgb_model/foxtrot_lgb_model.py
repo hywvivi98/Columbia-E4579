@@ -30,6 +30,6 @@ class ModelController:
 
 if __name__ == "__main__":
     print(os.path)
-    mc = ModelController("lgb", True)
+    mc = ModelController("foxtrot_lgb", True)
     print(os.path.join(mc.model_name + "_model.pkl"))
     print(mc.model)

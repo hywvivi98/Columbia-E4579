@@ -3,7 +3,7 @@ import pandas as pd
 import os
 from sklearn.metrics.pairwise import cosine_similarity
 import pickle
-from src.recommendation_system.ml_models.foxtrot_lgb_model.lgb_model import (
+from src.recommendation_system.ml_models.foxtrot_lgb_model.foxtrot_lgb_model import (
     ModelController,
 )
 from functools import lru_cache
@@ -11,7 +11,7 @@ from functools import lru_cache
 from .AbstractModel import AbstractModel
 
 # load model once
-model = ModelController("lgb", load_model=True).model
+model = ModelController("foxtrot_lgb", load_model=True).model
 
 # load data once
 CONTENT_FEATURES = pd.DataFrame()
